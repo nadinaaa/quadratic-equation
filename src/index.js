@@ -54,8 +54,8 @@ t1=Math.round(x1);
 t2=Math.round(x2);
 //s[0]=t1;
 //s[1]=t2;
-s.push(t2);
 s.push(t1);
+s.push(t2);
 }
 if( d=='0')
 {
@@ -64,6 +64,6 @@ x1=x1*1;
 t1=Math.round(x1);
 s[0]=t1;
 }
-
+s.sort(function(a,b){return a-b;});
 return s;
 }
